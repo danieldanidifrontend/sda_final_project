@@ -1,0 +1,13 @@
+img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.card {
+    height: 250px;
+    width: 450px;
+
+    .content {
+        position: relative;
+    }
+}

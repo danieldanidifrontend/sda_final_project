@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Product } from 'src/app/services/product';
 import { ProductService } from 'src/app/services/product.service';
 
 
@@ -12,14 +13,14 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class ShopComponent implements OnInit {
 
-  productItems = [];
-  public wynik;
+  productItems$: Observable<Product[]>
+  
   
 
   constructor(private productService:ProductService ) {
   
 
-    this.wynik = this.productService.getProducts();
+    this.productItems$ = this.productService.getProducts();
   }
 
   ngOnInit(): void {

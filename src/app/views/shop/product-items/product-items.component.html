@@ -1,10 +1,15 @@
-<li class="product-item">
-    <div class="header">
-        <span class="title">{{productList?.title}}</span>
-        <span class="img"></span>
-    </div>
-    <div class="infos">
-        <span class="price">{{productList?.price}}</span>
+<div class="product-item">
+    <mat-card class="card">
+        <div class="content">
+        <div class="title">{{productList?.title}}</div>
+        <div class="img">
+            <img src="{{productList?.image}}" alt="{{productList?.title}}">
+        </div>
+        <div class="price">{{productList?.price}}$</div>
         <span class="category"></span>
+        <button mat-raised-button color="primary">Details</button>
     </div>
-</li>
+    </mat-card>
+</div>
+
+
