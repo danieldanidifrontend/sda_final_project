@@ -1,0 +1,31 @@
+<!-- <div>
+    {{ (wynik | async)?.[0]?.title | json}}
+</div> -->
+
+<!-- <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-title>
+                {{ (wynik | async)?.[0]?.title | json}}
+            </mat-card-title>
+            mat-card-
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list> -->
+
+
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+        <mat-card class="product-card" *ngFor="let product of productItems">
+
+            
+            <app-product-items></app-product-items>
+            <mat-card-actions>
+            <button mat-button>add to cart</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
