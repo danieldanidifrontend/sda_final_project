@@ -11,10 +11,12 @@ import { LayoutComponent } from './layout/layout.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
+    
     
   ],
   imports: [
