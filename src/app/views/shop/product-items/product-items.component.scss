@@ -1,13 +1,50 @@
-img {
-    max-width: 150px;
-    max-height: 150px;
-}
+// .product-items {
+//     .card {
+//         display: flex;
+//         justify-content: space-around;
+//         height: 300px;
+//         width: 450px;
+    
+        
+    
+        
+    
+//     .content {
+//         margin: 3px auto 3px auto;
+//         .title {
+//             justify-content: center;
+//         }
+
+//         .price {
+//             margin-top: 10px
+//         }
+//     }
+
+    
+//         .img-card {
+        
+//             justify-content: center;
+//             max-width: 150px;
+//             max-height: 150px;
+
+//             img {
+//                 max-width: 150px;
+//                 max-height: 150px;
+//             }
+//         }
+//     }
+// }
 
 .card {
-    height: 250px;
-    width: 450px;
 
-    .content {
-        position: relative;
+    text-align: center;
+    width: 30vw;
+    height: 30vh;
+
+    .title {
+        font-size: 15px;
     }
 }
+
+
+

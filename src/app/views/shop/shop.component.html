@@ -1,5 +1,5 @@
 <div *ngIf="(productItems$ | async) as productItems">
-    <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-list cols="2" rowHeight="1:1" class="grid-content">
         <mat-grid-tile class="product-card" *ngFor="let product of productItems">
             <app-product-items [productList]="product"></app-product-items>
         </mat-grid-tile>

@@ -1,15 +1,20 @@
-<div class="product-item">
-    <mat-card class="card">
-        <div class="content">
-        <div class="title">{{productList?.title}}</div>
-        <div class="img">
-            <img src="{{productList?.image}}" alt="{{productList?.title}}">
-        </div>
-        <div class="price">{{productList?.price}}$</div>
-        <span class="category"></span>
+
+<mat-card class="card">
+    <mat-card-title class="title">
+        {{productList?.title}}
+    </mat-card-title>
+    <mat-card-subtitle>
+        {{productList?.category}}
+    </mat-card-subtitle>
+    <img mat-card-md-image src="{{productList?.image}}" alt="{{productList?.title}}">  
+
+    <mat-card-subtitle>
+        {{productList?.price}}$
+    </mat-card-subtitle>
+    <mat-card-actions>
         <button mat-raised-button color="primary">Details</button>
-    </div>
-    </mat-card>
-</div>
+    </mat-card-actions>
+</mat-card>
+
 
 
